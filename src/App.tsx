@@ -57,8 +57,7 @@ const Navbar = () => {
             <Heart className="text-rose-500 transition-transform duration-500 group-hover:scale-110" size={24} fill="currentColor" />
           </div>
           <span className="flex flex-col justify-center">
-            <span className="font-cursive text-3xl text-rose-600 leading-none mt-1 transition-colors duration-500 group-hover:text-rose-500">Sweet Delight</span>
-            <span className="font-serif text-rose-400 text-xs tracking-[0.2em] uppercase font-bold">Chashma</span>
+            <span className="font-cursive text-3xl text-rose-600 leading-none mt-1 transition-colors duration-500 group-hover:text-rose-500">Sweet Bakery</span>
           </span>
         </div>
 
@@ -419,8 +418,7 @@ const Footer = () => {
                 <Heart className="text-rose-300" size={24} fill="currentColor" />
               </div>
               <span className="flex flex-col justify-center">
-                <span className="font-cursive text-3xl text-rose-200 leading-none mt-1">Sweet Delight</span>
-                <span className="font-serif text-rose-400 text-xs tracking-[0.2em] uppercase font-bold">Chashma</span>
+                <span className="font-cursive text-3xl text-rose-200 leading-none mt-1">Sweet Bakery</span>
               </span>
             </div>
             <p className="text-rose-200/80 mb-8 font-sans leading-relaxed">Baking happiness for your special moments. Order your dream cake today and make memories sweeter!</p>
@@ -455,20 +453,12 @@ const Footer = () => {
                 <MapPin className="text-rose-400 flex-shrink-0 mt-1" size={24} />
                 <span>123 Bakery Street, Sweet Town,<br/>ST 12345</span>
               </li>
-              <li className="flex items-center gap-4 text-rose-200/80">
-                <Phone className="text-rose-400 flex-shrink-0" size={24} />
-                <span>+1 (555) 123-4567</span>
-              </li>
-              <li className="flex items-center gap-4 text-rose-200/80">
-                <MessageCircle className="text-rose-400 flex-shrink-0" size={24} />
-                <span>+1 (555) 987-6543 (WhatsApp)</span>
-              </li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-rose-900/50 pt-8 text-center text-rose-300/60 text-sm font-sans">
-          <p>&copy; {new Date().getFullYear()} Sweet Delight Chashma. All rights reserved. Baked with <Heart size={12} className="inline text-rose-500 mx-1" fill="currentColor" /> love.</p>
+          <p>&copy; {new Date().getFullYear()} Sweet Bakery. All rights reserved. Baked with <Heart size={12} className="inline text-rose-500 mx-1" fill="currentColor" /> love.</p>
         </div>
       </div>
     </footer>
@@ -479,12 +469,12 @@ const ReferenceCartDrawer = ({ cart, isOpen, setIsOpen, removeFromCart }: { cart
   const handleWhatsAppOrder = () => {
     if (cart.length === 0) return;
     
-    const text = `Hi Sweet Delight Chashma! 💖\n\nI'd like to inquire about a custom cake order. I've selected the following designs as references from your gallery:\n\n` +
+    const text = `Hi Sweet Bakery! 💖\n\nI'd like to inquire about a custom cake order. I've selected the following designs as references from your gallery:\n\n` +
       cart.map(item => `🎂 ${item.title} (Ref: ${item.id})`).join('\n') +
       `\n\nCan you please provide me with a quote and flavor options? Thank you!`;
       
     const encodedText = encodeURIComponent(text);
-    window.open(`https://wa.me/15559876543?text=${encodedText}`, '_blank');
+    window.open(`https://wa.me/?text=${encodedText}`, '_blank');
   };
 
   return (
