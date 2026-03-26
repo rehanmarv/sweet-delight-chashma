@@ -6,3 +6,12 @@
   --font-serif: "Playfair Display", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
   --font-cursive: "Great Vibes", cursive;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.doodle-border-1 { border-radius: 255px 15px 225px 15px/15px 225px 15px 255px; }
+.doodle-border-2 { border-radius: 15px 255px 15px 225px/255px 15px 225px 15px; }
+.doodle-border-3 { border-radius: 225px 15px 255px 15px/15px 255px 15px 225px; }
+.doodle-border-4 { border-radius: 15px 225px 15px 255px/225px 15px 255px 15px; }
